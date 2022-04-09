@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-fe": "cd client && npm run start",
+    "start-be": "cd server && npm run start",
+    "start": "npx concurrently \"npm:start-be\" \"npm:start-fe\""
   },
   "keywords": [],
-  "author": "",
+  "author": "icanq",
   "license": "ISC"
 }
